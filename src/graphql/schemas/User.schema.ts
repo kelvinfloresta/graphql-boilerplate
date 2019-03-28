@@ -5,7 +5,7 @@ export const type = `
         name: String!
         email: String!
         createdAt: String!
-        updated: String!
+        updatedAt: String!
     }
 
     input UserInput {
