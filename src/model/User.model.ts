@@ -81,7 +81,6 @@ export default (sequelize: Sequelize.Sequelize, DataTypes: Sequelize.DataTypes):
   }
 
   User.associate = (models: IModels): void => {
-    User.Client = User.hasOne(models.Client)
   }
 
   return User
