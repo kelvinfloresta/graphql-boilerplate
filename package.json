@@ -1,0 +1,51 @@
+{
+  "name": "garcom-robo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production ts-node src/index.ts",
+    "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon --watch src/**/*.ts --exec ts-node src/index.ts",
+    "build": "cross-env NODE_ENV=production tsc",
+    "seed": "ts-node src/seeders/index.ts",
+    "cli": "ts-node src/cli/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.3",
+    "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
+    "dataloader": "^1.4.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-fields": "^2.0.2",
+    "graphql-tools": "^3.0.2",
+    "jsonwebtoken": "^8.3.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.4",
+    "@types/express-graphql": "^0.6.2",
+    "@types/inquirer": "0.0.44",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/node": "^11.9.6",
+    "@types/sequelize": "^4.27.34",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.15.1",
+    "eslint-config-standard-with-typescript": "^7.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "inquirer": "^6.2.2",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.4"
+  }
+}
